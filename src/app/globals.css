@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap");
+
+* {
+  /* outline: 1px solid red; */
+}
+
+.noise {
+  background: url(/bgTexture.png) 0% 0% / 100px 100px repeat lightgray;
+}
+
+.brand-logos {
+  grid-template-columns: repeat(6, 1fr);
+}
