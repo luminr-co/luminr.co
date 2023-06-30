@@ -1,15 +1,15 @@
 import React from "react";
 
 type Props = {
-  width: string;
-  height: string;
+  customClass?: string;
+
   children: React.ReactNode;
 };
 
-const Card = ({ width, height, children }: Props) => {
+const Card = ({ customClass, children }: Props) => {
   return (
     <div
-      className={`rounded-3xl p-3 bg-beige font-kanit text-black flex flex-col gap-3 ${height} ${width}`}
+      className={`rounded-3xl p-3 bg-beige font-kanit text-black flex flex-col gap-3  ${customClass}`}
     >
       {children}
     </div>

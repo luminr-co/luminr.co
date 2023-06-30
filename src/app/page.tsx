@@ -1,7 +1,7 @@
 import { Navbar } from "@/app/sections/Navbar";
 import { HeroSection } from "./sections/HeroSection";
 import { Services } from "./sections/Services";
-import { Footer } from "./sections/Footer";
+import { Footer, MobileFooter } from "./sections/Footer";
 import { TrustedBy } from "./sections/TrustedBy";
 import { Vision } from "./sections/Vision";
 import { Works } from "./sections/Works";
@@ -16,6 +16,7 @@ export default function Home() {
       <Works />
       <TrustedBy />
       <Footer />
+      <MobileFooter />
     </main>
   );
 }

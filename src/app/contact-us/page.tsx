@@ -1,28 +1,20 @@
 "use client";
 import React, { FormEvent, useRef } from "react";
-import { Navbar } from "../sections/Navbar";
-import { Footer } from "../sections/Footer";
-import { Card } from "../components/Card";
+import { useForm, ValidationError } from "@formspree/react";
+import toast, { Toaster } from "react-hot-toast";
 import Image from "next/image";
 
-const ContactUs = () => {
-  const nameRef = useRef<HTMLInputElement>(null);
-  const emailRef = useRef<HTMLInputElement>(null);
-  const descriptionRef = useRef<HTMLTextAreaElement>(null);
+import { Navbar } from "../sections/Navbar";
+import { Footer, MobileFooter } from "../sections/Footer";
+import { Card } from "../components/Card";
 
-  const handleSubmit = (event: FormEvent) => {
-    event.preventDefault();
-    console.log(
-      "name= ",
-      nameRef.current?.value,
-      " ",
-      " email= ",
-      emailRef.current?.value,
-      " ",
-      " description= ",
-      descriptionRef.current?.value
-    );
-  };
+const ContactUs = () => {
+  const [state, handleSubmit] = useForm("mknlwkba");
+  if (state.succeeded) {
+    toast.success("Message sent sucessfully.");
+  } else {
+    toast.error("Error occured! Please try again later");
+  }
 
   return (
     <main className="z-50  ">
@@ -34,8 +26,8 @@ const ContactUs = () => {
         <p className="text-beige text-[2rem] font-normal leading-[120.5%] mb-10">
           Get in touch!
         </p>
-        <div className="form  flex items-center gap-28  mb-24">
-          <Card width="w-[48rem]" height="h-auto">
+        <div className="form  grid md:grid-cols-2 content-evenly   gap-28  mb-24 ">
+          <Card customClass="w-full md:w-[48rem] h-auto justify-self-start">
             <form onSubmit={handleSubmit}>
               <div className="mb-6 w-11/12 mx-auto mt-4">
                 <label
@@ -47,12 +39,17 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-                  ref={nameRef}
-                  id="email"
+                  id="name"
+                  name="name"
                   className=" bg-beige border-black text-gray-900 text-sm rounded-lg  block w-full p-2.5 border-2 focus:outline-none"
                   placeholder="John Doe"
                   // pattern="/^([A-Za-z]+[,\.\s]?|[A-Za-z]+['\-]?)+$/"
                   required
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
               </div>
               <div className="mb-6 w-11/12 mx-auto mt-4">
@@ -65,11 +62,16 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="email"
-                  ref={emailRef}
                   id="email"
+                  name="email"
                   className=" bg-beige border-black text-gray-900 text-sm rounded-lg  block w-full p-2.5 border-2 focus:outline-none"
                   placeholder="mmmyess@gmail.com"
                   required
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
               </div>
               <div className="mb-6 w-11/12 mx-auto mt-4">
@@ -82,15 +84,24 @@ const ContactUs = () => {
                 </label>
                 <textarea
                   rows={10}
-                  ref={descriptionRef}
+                  name="description"
                   id="description"
                   className=" bg-beige border-black text-gray-900 text-sm rounded-lg  block w-full p-2.5 border-2 focus:outline-none"
                   placeholder="This is some epic project description. WOW. NICE. This is some epic project description. WOW. NICE. This is some epic project description. WOW. NICE. This is some epic project description. WOW. NICE. This is some epic project description. WOW. NICE.  "
                   required
                 />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
               </div>
               <div className="w-full text-center">
-                <button className="rounded-lg border-2 border-black font-kanit text-xl font-medium  py-2 px-3 ">
+                <button
+                  type="submit"
+                  disabled={state.submitting}
+                  className="rounded-lg border-2 border-black font-kanit text-xl font-medium  py-2 px-3 "
+                >
                   Submit
                 </button>
               </div>
@@ -106,6 +117,8 @@ const ContactUs = () => {
         </div>
       </div>
       <Footer />
+      <MobileFooter />
+      <Toaster />
     </main>
   );
 };

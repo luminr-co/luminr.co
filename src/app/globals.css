@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap");
 
 * {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 .noise {
