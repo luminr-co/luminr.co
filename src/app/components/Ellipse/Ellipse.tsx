@@ -15,7 +15,7 @@ const Ellipse = ({ top, isOdd }: Props) => {
         [isOdd ? "right" : "left"]: "0",
         // width: "27rem",
         // height: "27rem",
-        borderRadius: "725px",
+        borderRadius: "45.3125rem",
         backgroundColor: "#DB6332",
         filter: "blur(350px)",
         opacity: "0.800000011920929",

@@ -39,7 +39,7 @@ const Works = () => {
       <h1 className="max-w-3xl text-beige text-[4rem] leading-[normal] font-mons font-bold capitalize">
         Some of Our Work
       </h1>
-      <div className="grid grid-cols-2 gap-5 mt-20">{mappedCards}</div>
+      <div className="grid md:grid-cols-2 gap-5 mt-20">{mappedCards}</div>
     </div>
   );
 };

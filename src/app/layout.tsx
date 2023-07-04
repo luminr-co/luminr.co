@@ -1,7 +1,5 @@
-import Head from "next/head";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
-import { Ellipse } from "./components/Ellipse";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -15,18 +13,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const ellipses = [];
-
-  for (let i = 0; i < 8; i++) {
-    const top = 30 + i * 1000;
-    const isOdd = i % 2 === 0;
-    ellipses.push(<Ellipse key={i} top={top} isOdd={isOdd} />);
-  }
-
   return (
     <html lang="en">
       <body className={`${montserrat.className} noise  relative  `}>
-        {ellipses}
         {children}
       </body>
     </html>

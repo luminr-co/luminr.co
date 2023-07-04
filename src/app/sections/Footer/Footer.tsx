@@ -6,15 +6,16 @@ const Footer = () => {
   const currentYear = new Date();
   return (
     <div className="w-11/12 mx-auto mb-10 hidden md:block">
-      <Card>
+      <Card customClass="py-7">
         <Image
           src={"/footer-logo.svg"}
           alt="logo"
           height={50}
           width={80}
           unoptimized
+          className="w-36"
         />
-        <div className="flex justify-between items-center py-7">
+        <div className="flex justify-between items-center py-2">
           <div className="contact-us flex flex-col gap-4 font-kanit">
             <p className="text-2xl font-semibold ">Contact Us</p>
             <p className="text-xl">hello@lumir.co</p>

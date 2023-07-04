@@ -3,24 +3,40 @@ import Image from "next/image";
 import React from "react";
 
 const TrustedBy = () => {
-  const imagesArray: string[] = [
-    "/adidas.svg",
-    "/apple.svg",
-    "chanel.svg",
-    "mcdonald.svg",
-    "nike.svg",
-    "vector.svg",
-    "google.svg",
+  const imagesArray: { logo: string; website: string }[] = [
+    {
+      logo: "/brands/writtenwater.svg",
+      website: "https://writtenwater.com",
+    },
+    {
+      logo: "/brands/agile-inverse.svg",
+      website: "https://agile.com.np/",
+    },
+    {
+      logo: "/brands/codefornepal.png",
+      website: "https://codefornepal.org/",
+    },
+    {
+      logo: "/brands/Deerhack_logo_light 1.svg",
+      website: "https://deerhack.deerwalk.edu.np/",
+    },
   ];
-  const mappedImages = imagesArray.map((image: string, i: number) => (
-    <Image
+  const mappedImages = imagesArray.map((image, i: number) => (
+    <a
       key={i}
-      src={image}
-      width={20}
-      height={20}
-      alt="brand-logo"
-      className="aspect-[3/2] object-contain w-1/2 md:w-[11%]"
-    />
+      href={image.website}
+      target="_blank"
+      className=" w-1/2 md:w-[11%] "
+    >
+      <Image
+        src={image.logo}
+        height={100}
+        width={100}
+        alt="brand-logo"
+        className="aspect-[3/2] object-contain"
+        unoptimized
+      />
+    </a>
   ));
   return (
     <div className="trusted-by text-beige w-11/12 mx-auto my-24 ">
@@ -41,8 +57,9 @@ const TrustedBy = () => {
           <Image
             src="/handshake.svg"
             alt="handshake"
-            width={350}
-            height={250}
+            height={150}
+            width={150}
+            className="w-44 md:w-[22rem]"
           />
           <ContactusButton />
         </div>

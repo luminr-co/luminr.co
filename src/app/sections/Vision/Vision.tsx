@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import waterfall from "../../assets/images/waterfall.svg";
 
 const Vision = () => {
   return (
@@ -12,8 +14,8 @@ const Vision = () => {
         we have a defined set of steps to help us align with your vision and
         deliver an outstanding product.
       </p>
-      <div className="font-mons font-bold text-[4rem] leading-[normal] mt-20 ">
-        Waterfall diagram here
+      <div className="flex items-center mt-24">
+        <Image src={waterfall} alt="waterfall" className="!w-[80rem] !h-auto" />
       </div>
     </div>
   );
