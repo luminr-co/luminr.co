@@ -1,6 +1,6 @@
 const CustomerSection = () => {
   return (
-    <div className="my-16 flex flex-col md:flex-row place-content-center text-center md:place-content-evenly">
+    <div className="my-16 flex flex-col gap-10 md:flex-row place-content-center text-center md:place-content-evenly">
       <p className="text-2xl font-[500] font-kanit">
         <span className=" text-[2.5rem] !font-bold">200+</span>
         <br />
