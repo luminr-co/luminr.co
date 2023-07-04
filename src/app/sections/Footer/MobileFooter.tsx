@@ -7,7 +7,7 @@ const MobileFooter = () => {
   const currentYear = new Date();
   return (
     <div className="w-11/12 mx-auto mb-10 block md:hidden">
-      <Card customClass="py-6">
+      <Card customClass="py-6 px-6">
         <Image
           src={"/footer-logo.svg"}
           alt="logo"

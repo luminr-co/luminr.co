@@ -26,14 +26,14 @@ const TrustedBy = () => {
       key={i}
       href={image.website}
       target="_blank"
-      className=" w-1/2 md:w-[11%] "
+      className=" w-auto md:w-auto "
     >
       <Image
         src={image.logo}
         height={100}
         width={100}
         alt="brand-logo"
-        className="aspect-[3/2] object-contain"
+        className="!aspect-[3/2] object-contain !w-20 !h-20"
         unoptimized
       />
     </a>
@@ -43,7 +43,7 @@ const TrustedBy = () => {
       <h1 className="font-mons text-[2.5rem] font-bold capitalize py-6 text-center">
         Trusted By
       </h1>
-      <div className="brand-logos flex flex-wrap justify-center  gap-[3.75rem]">
+      <div className="brand-logos flex flex-wrap justify-center items-center gap-[3.75rem]">
         {mappedImages}
       </div>
       <div className="mt-52 text-beige">
