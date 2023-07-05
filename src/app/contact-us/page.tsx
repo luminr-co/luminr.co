@@ -22,10 +22,10 @@ const ContactUs = () => {
         <Navbar />
         <div className="mx-auto w-11/12 mt-10 ">
           <h1 className="font-mons text-[4rem]  max-w-3xl leading-[normal] text-beige md:text-left font-bold">
-            We’d love to hear about your project
+            We’d Love to Hear About your Project
           </h1>
           <p className="text-beige text-[2rem] font-normal leading-[120.5%] mb-10">
-            Get in touch!
+            Get in Touch!
           </p>
           <div className="form  grid lg:grid-cols-2 justify-items-center content-center     mb-24 ">
             <Card className="w-full gap-5  grid-col-2 p-9">
@@ -35,7 +35,7 @@ const ContactUs = () => {
                     htmlFor="name"
                     className="text-xl block not-italicfont-kanit  font-medium leading-[normal] text-black "
                   >
-                    Name
+                    Name:
                   </label>
                   <input
                     type="text"
@@ -54,10 +54,9 @@ const ContactUs = () => {
                 <div className="mb-6 w-11/12 mx-auto mt-4">
                   <label
                     htmlFor="email"
-                    className="text-xl] block 
-                not-italicfont-kanit font-medium leading-[normal] text-black "
+                    className="text-xl block not-italicfont-kanit  font-medium leading-[normal] text-black "
                   >
-                    Email
+                    Email:
                   </label>
                   <input
                     type="email"
@@ -78,7 +77,7 @@ const ContactUs = () => {
                     className="text-xl block 
                 not-italicfont-kanit font-medium leading-[normal] text-black "
                   >
-                    Description
+                    Description:
                   </label>
                   <textarea
                     rows={10}

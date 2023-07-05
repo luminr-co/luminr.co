@@ -39,7 +39,7 @@ const Services = () => {
         "Watch as your business gains a strategic edge through informed and planned decisions.",
     },
     {
-      title: "SEO",
+      title: "Search Engine Optimization",
       description:
         "Increase your online exposure and organic traffic with intelligent search engine strategies that help you dominate search engine rankings and attract the audience to your digital doorstep.",
       description2:
@@ -57,7 +57,7 @@ const Services = () => {
   return (
     <div className="w-11/12 mx-auto my-6 md:my-32 text-beige">
       <h2 className="font-mons text-[2rem] md:text-[4rem] font-bold text-center  md:text-start max-w-3xl">
-        We help you build your dream product
+        We Help you Build your Dream Product
       </h2>
       <div className="grid lg:grid-cols-2 xl:grid-cols-3 align-middle md:place-content-center my-5 py-5 gap-6 font-kanit place-content-center">
         {servicesMapped}
