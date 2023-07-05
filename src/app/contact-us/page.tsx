@@ -1,5 +1,5 @@
 "use client";
-import React, { FormEvent, useRef } from "react";
+import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import toast, { Toaster } from "react-hot-toast";
 import Image from "next/image";
@@ -7,19 +7,17 @@ import Image from "next/image";
 import { Navbar } from "../sections/Navbar";
 import { Footer, MobileFooter } from "../sections/Footer";
 import { Card } from "../components/Card";
-import { Background } from "../components/Background";
 
 const ContactUs = () => {
   const [state, handleSubmit] = useForm("mknlwkba");
   if (state.succeeded) {
     toast.success("Message sent sucessfully.");
-  } else if (!state.succeeded) {
+  } else if (state.result && !state.succeeded) {
     toast.error("Error occured! Please try again later");
   }
 
   return (
-    <>
-      <Background noOfEllipses={2} />
+    <div className="container mx-auto">
       <main className="z-50  ">
         <Navbar />
         <div className="mx-auto w-11/12 mt-10 ">
@@ -29,14 +27,13 @@ const ContactUs = () => {
           <p className="text-beige text-[2rem] font-normal leading-[120.5%] mb-10">
             Get in touch!
           </p>
-          <div className="form  grid md:grid-cols-2 justify-items-center content-center     mb-24 ">
-            <Card className="w-full gap-5  grid-col-2">
+          <div className="form  grid lg:grid-cols-2 justify-items-center content-center     mb-24 ">
+            <Card className="w-full gap-5  grid-col-2 p-9">
               <form onSubmit={handleSubmit}>
                 <div className="mb-6 w-11/12 mx-auto mt-4">
                   <label
                     htmlFor="name"
-                    className="text-xl block 
-                not-italicfont-kanit  font-medium leading-[normal] text-black "
+                    className="text-xl block not-italicfont-kanit  font-medium leading-[normal] text-black "
                   >
                     Name
                   </label>
@@ -45,7 +42,6 @@ const ContactUs = () => {
                     id="name"
                     name="name"
                     className=" bg-beige border-black text-gray-900 text-sm rounded-lg  block w-full p-2.5 border-2 focus:outline-none"
-                    placeholder="John Doe"
                     // pattern="/^([A-Za-z]+[,\.\s]?|[A-Za-z]+['\-]?)+$/"
                     required
                   />
@@ -68,7 +64,6 @@ const ContactUs = () => {
                     id="email"
                     name="email"
                     className=" bg-beige border-black text-gray-900 text-sm rounded-lg  block w-full p-2.5 border-2 focus:outline-none"
-                    placeholder="mmmyess@gmail.com"
                     required
                   />
                   <ValidationError
@@ -90,7 +85,6 @@ const ContactUs = () => {
                     name="description"
                     id="description"
                     className=" bg-beige border-black text-gray-900 text-sm rounded-lg  block w-full p-2.5 border-2 focus:outline-none"
-                    placeholder="This is some epic project description. WOW. NICE. This is some epic project description. WOW. NICE. This is some epic project description. WOW. NICE. This is some epic project description. WOW. NICE. This is some epic project description. WOW. NICE.  "
                     required
                   />
                   <ValidationError
@@ -116,7 +110,7 @@ const ContactUs = () => {
                 alt="handshake"
                 height={150}
                 width={150}
-                className="w-52 md:w-[25rem] mt-20 md:mt-0"
+                className="w-52 md:w-[25rem] mt-20 lg:mt-0"
               />
             </div>
           </div>
@@ -125,7 +119,7 @@ const ContactUs = () => {
         <MobileFooter />
         <Toaster />
       </main>
-    </>
+    </div>
   );
 };
 
