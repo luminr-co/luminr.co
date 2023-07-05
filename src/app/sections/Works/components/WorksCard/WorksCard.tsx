@@ -9,7 +9,7 @@ type Props = {
 const WorksCard = ({ title, description }: Props) => {
   return (
     <div>
-      <Card customClass="max-w-[94.5rem] h-[25rem]">Image here</Card>
+      <Card className="max-w-[94.5rem] h-[25rem]">Image here</Card>
       <h1 className="project-title mt-8 capitalize font-bold text-beige text-[2.5rem] leading-[normal] font-kanit  ">
         {title}
       </h1>
