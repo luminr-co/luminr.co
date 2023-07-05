@@ -1,17 +1,26 @@
-import Image from "next/image";
-import Logo from "./Logo";
+import { Navbar } from "@/app/sections/Navbar";
+import { HeroSection } from "./sections/HeroSection";
+import { Services } from "./sections/Services";
+import { Footer, MobileFooter } from "./sections/Footer";
+import { TrustedBy } from "./sections/TrustedBy";
+import { Vision } from "./sections/Vision";
+import { Works } from "./sections/Works";
+import { Background } from "./components/Background";
 
-export default function Home() {
+export default async function Home() {
   return (
-    <div className="overflow-hidden">
-      <main className="bg-secondary grid place-content-center w-screen h-screen">
-        <div className="w-52 lg:w-[882px]">
-          <Logo />
-        </div>
+    <>
+      {/* <Background noOfEllipses={5} /> */}
+      <main className="z-50 container mx-auto">
+        <Navbar />
+        <HeroSection />
+        <Services />
+        <Vision />
+        {/* <Works /> */}
+        <TrustedBy />
+        <Footer />
+        <MobileFooter />
       </main>
-      <section className="grid place-content-center bg-white text-secondary w-screen h-screen text-5xl font-bold">
-        COMING SOON
-      </section>
-    </div>
+    </>
   );
 }
