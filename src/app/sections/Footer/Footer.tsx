@@ -27,18 +27,18 @@ const Footer = () => {
             <div className="socials font-kanit flex flex-col gap-4">
               <p className="text-2xl font-semibold"> Socials</p>
               <a
-                href="https://instagram.com/luminr.co?igshid=MzNlNGNkZWQ4Mg=="
+                href="https://instagram.com/luminr.co"
                 target="_blank"
                 className="text-xl "
               >
                 Instagram
               </a>
               <a
-                href="https://www.linkedin.com/company/luminr-co/about/?viewAsMember=true"
+                href="https://www.linkedin.com/company/luminr-co/"
                 target="_blank"
                 className="text-xl "
               >
-                Linkedin
+                LinkedIn
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=100093330643165&mibextid=ZbWKwL"

@@ -34,7 +34,7 @@ const TrustedBy = () => {
     </a>
   ));
   return (
-    <div className="trusted-by text-beige w-11/12 mx-auto my-6 md:my-24 ">
+    <div className="trusted-by text-beige w-11/12 mx-auto  my-24">
       <h1 className="font-mons text-[2rem] md:text-[2.5rem] font-bold capitalize py-6 text-center">
         Trusted By
       </h1>
@@ -42,8 +42,8 @@ const TrustedBy = () => {
         {mappedImages}
       </div>
       <div className="mt-24 md:mt-52 text-beige">
-        <h1 className="font-mons font-bold capitalize text-4xl text-center md:leading-[95.5%]">
-          Ready to Start A Project
+        <h1 className="font-mons font-bold text-4xl text-center md:leading-[95.5%]">
+          Ready to Start a Project?
         </h1>
         <p className="font-kanit text-[2rem] text-center mt-7 leading-[95.5%]">
           Book a meeting with our team right away
