@@ -15,7 +15,7 @@ const Vision = () => {
         deliver an outstanding product.
       </p>
       <div className="flex items-center mt-24">
-        <Image src={waterfall} alt="waterfall" className="!w-[80rem] !h-auto" />
+        <Image src={waterfall} alt="waterfall" className="!w-full !h-auto" />
       </div>
     </div>
   );

@@ -22,18 +22,13 @@ const TrustedBy = () => {
     },
   ];
   const mappedImages = imagesArray.map((image, i: number) => (
-    <a
-      key={i}
-      href={image.website}
-      target="_blank"
-      className=" w-1/2 md:w-[11%] "
-    >
+    <a key={i} href={image.website} target="_blank">
       <Image
         src={image.logo}
         height={100}
         width={100}
         alt="brand-logo"
-        className="aspect-[3/2] object-contain"
+        className="!aspect-[3/2] object-contain !h-auto w-32 md:w-40"
         unoptimized
       />
     </a>
@@ -43,11 +38,11 @@ const TrustedBy = () => {
       <h1 className="font-mons text-[2.5rem] font-bold capitalize py-6 text-center">
         Trusted By
       </h1>
-      <div className="brand-logos flex flex-wrap justify-center  gap-[3.75rem]">
+      <div className="brand-logos flex flex-wrap justify-center items-center gap-[3.75rem]">
         {mappedImages}
       </div>
       <div className="mt-52 text-beige">
-        <h1 className="font-mons font-bold capitalize text-[2.5rem] text-center leading-[95.5%]">
+        <h1 className="font-mons font-bold capitalize text-4xl text-center md:leading-[95.5%]">
           Ready to Start A Project
         </h1>
         <p className="font-kanit text-[2rem] text-center mt-7 leading-[95.5%]">

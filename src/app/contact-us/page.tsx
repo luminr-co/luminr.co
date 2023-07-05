@@ -36,7 +36,7 @@ const ContactUs = () => {
                   <label
                     htmlFor="name"
                     className="text-xl block 
-                not-italicfont-kanit font-medium leading-[normal] text-black "
+                not-italicfont-kanit  font-medium leading-[normal] text-black "
                   >
                     Name
                   </label>
@@ -83,7 +83,7 @@ const ContactUs = () => {
                     className="text-xl block 
                 not-italicfont-kanit font-medium leading-[normal] text-black "
                   >
-                    Descripion
+                    Description
                   </label>
                   <textarea
                     rows={10}

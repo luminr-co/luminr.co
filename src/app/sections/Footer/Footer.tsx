@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date();
   return (
     <div className="w-11/12 mx-auto mb-10 hidden md:block">
-      <Card customClass="py-7">
+      <Card customClass="py-7 px-7">
         <Image
           src={"/footer-logo.svg"}
           alt="logo"

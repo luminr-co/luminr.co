@@ -6,7 +6,6 @@ import { TrustedBy } from "./sections/TrustedBy";
 import { Vision } from "./sections/Vision";
 import { Works } from "./sections/Works";
 import { Background } from "./components/Background";
-import mermaid from "mermaid";
 
 export default async function Home() {
   return (
