@@ -11,7 +11,7 @@ export default async function Home() {
   return (
     <>
       {/* <Background noOfEllipses={5} /> */}
-      <main className="z-50">
+      <main className="z-50 container mx-auto">
         <Navbar />
         <HeroSection />
         <Services />
