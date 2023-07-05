@@ -34,14 +34,14 @@ const TrustedBy = () => {
     </a>
   ));
   return (
-    <div className="trusted-by text-beige w-11/12 mx-auto my-24 ">
+    <div className="trusted-by text-beige w-11/12 mx-auto my-6 md:my-24 ">
       <h1 className="font-mons text-[2rem] md:text-[2.5rem] font-bold capitalize py-6 text-center">
         Trusted By
       </h1>
       <div className="brand-logos flex flex-wrap justify-center items-center gap-[3.75rem]">
         {mappedImages}
       </div>
-      <div className="mt-52 text-beige">
+      <div className="mt-24 md:mt-52 text-beige">
         <h1 className="font-mons font-bold capitalize text-4xl text-center md:leading-[95.5%]">
           Ready to Start A Project
         </h1>

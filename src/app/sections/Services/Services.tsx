@@ -55,7 +55,7 @@ const Services = () => {
     </Card>
   ));
   return (
-    <div className="w-11/12 mx-auto my-32 text-beige">
+    <div className="w-11/12 mx-auto my-6 md:my-32 text-beige">
       <h2 className="font-mons text-[2rem] md:text-[4rem] font-bold text-center  md:text-start max-w-3xl">
         We help you build your dream product
       </h2>

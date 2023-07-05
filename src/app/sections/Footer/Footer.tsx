@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="flex justify-between items-center py-2 text-start">
             <div className="contact-us flex flex-col gap-4 font-kanit">
               <p className="text-2xl font-semibold ">Contact Us</p>
-              <p className="text-xl">hello@lumir.co</p>
+              <p className="text-xl"><a href="mailto:hello@luminr.co">hello@lumir.co</a></p>
               <p className="location text-xl ">
                 Kaldhara <br /> Kathmandu,Nepal
               </p>

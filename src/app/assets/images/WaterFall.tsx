@@ -5,7 +5,6 @@ export default function WaterFall() {
   return (
     <svg
       width="1238"
-      height="1641"
       viewBox="0 0 1238 1641"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
