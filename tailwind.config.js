@@ -19,8 +19,8 @@ module.exports = {
         beige: "#F2F3D9",
       },
       fontFamily: {
-        mons: ["Montserrat", "sans-serif"],
-        kanit: ["Kanit", "sans-serif"],
+        mons: ['var(--font-mons)'],
+        kanit: ['var(--font-kanit)'],
       },
     },
   },
