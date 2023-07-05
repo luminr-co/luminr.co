@@ -30,7 +30,7 @@ const ContactUs = () => {
             Get in touch!
           </p>
           <div className="form  grid md:grid-cols-2 justify-items-center content-center     mb-24 ">
-            <Card customClass="w-full gap-5  grid-col-2">
+            <Card className="w-full gap-5  grid-col-2">
               <form onSubmit={handleSubmit}>
                 <div className="mb-6 w-11/12 mx-auto mt-4">
                   <label
