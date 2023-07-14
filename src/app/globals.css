@@ -8,7 +8,7 @@
   /* outline: 1px solid red; */
 }
 body {
-  background-image: url("/Background.jpg");
+  background-image: url("/Background.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
