@@ -17,7 +17,7 @@ const TrustedBy = () => {
       website: "https://codefornepal.org/",
     },
     {
-      logo: "/brands/Deerhack_logo_light 1.svg",
+      logo: "/brands/deerhack.webp",
       website: "https://deerhack.deerwalk.edu.np/",
     },
   ];
