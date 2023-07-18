@@ -9,8 +9,48 @@ const kanit = Kanit({
 });
 
 export const metadata = {
-  title: "Luminr.co",
+  title: {
+    template: "%s | Luminr.co",
+    default: "Luminr.co",
+  },
   description: "Illuminating Your Vision With Utmost Delight And Care",
+  keywords: [
+    "luminr",
+    "nepal",
+    "mobile development",
+    "web development",
+    "seo",
+    "branding",
+    "business intelligence",
+  ],
+  openGraph: {
+    title: "Luminr.co",
+    description: "Illuminating Your Vision With Utmost Delight And Care",
+    url: "https://luminr.co",
+    siteName: "Luminr.co",
+    images: [
+      {
+        url: "https://luminr.co/banner.png",
+        width: 229,
+        height: 193,
+        alt: "Luminr Banner",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Luminr.co",
+    description: "Illuminating Your Vision With Utmost Delight And Care",
+    images: ["https://luminr.co/banner.png"],
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  category: "technology",
 };
 
 export default function RootLayout({
