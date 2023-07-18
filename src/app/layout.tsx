@@ -1,3 +1,4 @@
+import Script from "next/script";
 import "./globals.css";
 import { Montserrat, Kanit } from "next/font/google";
 
@@ -60,7 +61,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${montserrat.variable} ${kanit.variable}`}>
-      <body className={`noise  relative`}>{children}</body>
+      <body className={`noise  relative`}>
+        {children}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-595J3VH2R3" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-595J3VH2R3');
+        `}
+        </Script>
+      </body>
     </html>
   );
 }
