@@ -31,8 +31,8 @@ export const metadata = {
     images: [
       {
         url: "https://luminr.co/banner.png",
-        width: 300,
-        height: 200,
+        width: 400,
+        height: 250,
         alt: "Luminr Banner",
       },
     ],
