@@ -18,7 +18,7 @@ const MobileFooter = () => {
         <div className="flex flex-col  py-7 gap-7">
           <div className="contact-us flex flex-col gap-4 font-kanit">
             <p className="text-xl font-semibold ">Contact Us</p>
-            <p className="company-email text-base">hello@lumir.co</p>
+            <p className="company-email text-base"><a href="mailto:hello@luminr.co">hello@luminr.co</a></p>
             <p className="location text-base font-normal ">
               Kaldhara <br /> Kathmandu,Nepal
             </p>

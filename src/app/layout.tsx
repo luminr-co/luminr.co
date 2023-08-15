@@ -10,6 +10,7 @@ const kanit = Kanit({
 });
 
 export const metadata = {
+  metadataBase: "https://luminr.co",
   title: {
     template: "%s | Luminr.co",
     default: "Luminr.co",
