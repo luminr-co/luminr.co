@@ -2,7 +2,6 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import toast, { Toaster } from "react-hot-toast";
-import Image from "next/image";
 
 import { Navbar } from "../sections/Navbar";
 import { Footer, MobileFooter } from "../sections/Footer";
@@ -21,14 +20,14 @@ const ContactUs = () => {
       <main className="z-50  ">
         <Navbar />
         <div className="mx-auto w-11/12 mt-10 ">
-          <h1 className="font-mons text-[4rem]  max-w-3xl leading-[normal] text-beige md:text-left font-bold">
+          <h1 className="font-mons text-[4rem]  leading-[normal] text-beige font-bold text-center">
             We’d Love to Hear About your Project
           </h1>
-          <p className="text-beige text-[2rem] font-normal leading-[120.5%] mb-10">
+          <p className="text-beige text-[2rem] font-normal leading-[120.5%] mb-10 text-center">
             Get in Touch!
           </p>
-          <div className="form  grid lg:grid-cols-2 justify-items-center content-center     mb-24 ">
-            <Card className="w-full gap-5  grid-col-2 p-9">
+          <div className="form flex items-center justify-center mb-24 ">
+            <Card className="w-full gap-5  lg:basis-1/2 p-9">
               <form onSubmit={handleSubmit}>
                 <div className="mb-6 w-11/12 mx-auto mt-4">
                   <label
@@ -103,15 +102,6 @@ const ContactUs = () => {
                 </div>
               </form>
             </Card>
-            <div className="flex items-center">
-              <Image
-                src="/handshake.svg"
-                alt="handshake"
-                height={150}
-                width={150}
-                className="w-52 md:w-[25rem] mt-20 lg:mt-0"
-              />
-            </div>
           </div>
         </div>
         <Footer />

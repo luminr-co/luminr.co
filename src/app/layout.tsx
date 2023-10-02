@@ -15,7 +15,7 @@ export const metadata = {
     template: "%s | Luminr.co",
     default: "Luminr.co",
   },
-  description: "Illuminating Your Vision With Utmost Delight And Care",
+  description: "Your trusted partner for all things digital. Build Your Dynamic Web and Mobile Applications and Enhance Online Visibility with SEO.",
   keywords: [
     "luminr",
     "nepal",
@@ -27,12 +27,12 @@ export const metadata = {
   ],
   openGraph: {
     title: "Luminr.co",
-    description: "Illuminating Your Vision With Utmost Delight And Care",
+    description: "Your trusted partner for all things digital. Build Your Dynamic Web and Mobile Applications and Enhance Online Visibility with SEO.",
     url: "https://luminr.co",
     siteName: "Luminr.co",
     images: [
       {
-        url: "https://luminr.co/banner.png",
+        url: "https://luminr.co/banner.webp",
         width: 400,
         height: 250,
         alt: "Luminr Banner",
@@ -44,8 +44,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Luminr.co",
-    description: "Illuminating Your Vision With Utmost Delight And Care",
-    images: ["https://luminr.co/banner.png"],
+    description: "Your trusted partner for all things digital. Build Your Dynamic Web and Mobile Applications and Enhance Online Visibility with SEO.",
+    images: ["https://luminr.co/banner.webp"],
   },
   viewport: {
     width: "device-width",
