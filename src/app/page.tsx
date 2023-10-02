@@ -4,8 +4,6 @@ import { Services } from "./sections/Services";
 import { Footer, MobileFooter } from "./sections/Footer";
 import { TrustedBy } from "./sections/TrustedBy";
 import { Vision } from "./sections/Vision";
-import { Works } from "./sections/Works";
-import { Background } from "./components/Background";
 
 export default async function Home() {
   return (

@@ -20,6 +20,18 @@ const TrustedBy = () => {
       logo: "/brands/deerhack.webp",
       website: "https://deerhack.deerwalk.edu.np/",
     },
+    {
+      logo: "/brands/ooo.svg",
+      website: "https://onlyoneoutlier.com",
+    },
+    {
+      logo: "/brands/appara.svg",
+      website: "https://www.instagram.com/appara.jewels/",
+    },
+    {
+      logo: "/brands/himalayan_connections.svg",
+      website: "https://himalayanconnections.com/",
+    },
   ];
   const mappedImages = imagesArray.map((image, i: number) => (
     <a key={i} href={image.website} target="_blank">
@@ -45,17 +57,7 @@ const TrustedBy = () => {
         <h1 className="font-mons font-bold text-4xl text-center md:leading-[95.5%]">
           Ready to Start a Project?
         </h1>
-        <p className="font-kanit text-[2rem] text-center mt-7 leading-[95.5%]">
-          Book a meeting with our team right away
-        </p>
-        <div className="mt-20 flex flex-col items-center gap-16 justify-center">
-          <Image
-            src="/handshake.svg"
-            alt="handshake"
-            height={150}
-            width={150}
-            className="w-44 md:w-[22rem]"
-          />
+        <div className="mt-10 flex flex-col items-center gap-16 justify-center">
           <ContactusButton />
         </div>
       </div>

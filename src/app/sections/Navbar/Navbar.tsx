@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="w-11/12 py-8 flex justify-between items-center  mx-auto">
         <Link href={"/"}>
           <Image
-            src="/logo.svg"
+            src="/full-logo.svg"
             width={160}
             height={32}
             alt="Picture of the author"
@@ -16,7 +16,7 @@ const Navbar = () => {
             className="hidden md:block"
           />
           <Image
-            src="/mobile-logo.svg"
+            src="/logo.svg"
             alt="Logo"
             width={35}
             height={0}
