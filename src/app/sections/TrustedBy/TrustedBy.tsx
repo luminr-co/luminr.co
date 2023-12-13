@@ -32,6 +32,10 @@ const TrustedBy = () => {
       logo: "/brands/himalayan_connections.svg",
       website: "https://himalayanconnections.com/",
     },
+    {
+      logo: "/brands/tigg_logo.svg",
+      website: "https://www.tiggapp.com/",
+    },
   ];
   const mappedImages = imagesArray.map((image, i: number) => (
     <a key={i} href={image.website} target="_blank">
